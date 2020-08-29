@@ -4,7 +4,8 @@ import './main.css'
 export default class Home extends Component {
   render() {
     return (
-
+      <>
+      <div> Out of Container </div>
       <div className="container" >
 
         <div className="left-space">
@@ -28,7 +29,7 @@ export default class Home extends Component {
         </div>
 
       </div>
-     
+      </>
     )
   }
 }
