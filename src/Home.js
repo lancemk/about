@@ -6,7 +6,7 @@ export default class Home extends Component {
     return (
       <>
       <div> Out of Container </div>
-      {/* <div className="container" >
+      <div className="container" >
 
         <div className="left-space">
           Empty
@@ -28,7 +28,7 @@ export default class Home extends Component {
           Empty
         </div>
 
-      </div> */}
+      </div>
       </>
     )
   }
