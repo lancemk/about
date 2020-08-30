@@ -16,7 +16,7 @@ export default function ImageAvatar() {
 
   return (
     <div className={classes.root}>
-      <Avatar alt="Remy Sharp" src="lance.jpg" />
+      <Avatar alt="Lance B.C. Mok" src="/image/lance.png" />
     </div>
   );
-}
+} 
