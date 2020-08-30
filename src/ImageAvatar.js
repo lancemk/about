@@ -11,14 +11,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ImageAvatars() {
+export default function ImageAvatar() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-      <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-      <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+      <Avatar alt="Remy Sharp" src="lance.jpg" />
     </div>
   );
 }

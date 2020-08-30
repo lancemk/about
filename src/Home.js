@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Card , Paper, List } from '@material-ui/core'
+import ImageAvatar from './ImageAvatar'
 import './main.css'
 
 export default class Home extends Component {
@@ -14,8 +15,8 @@ export default class Home extends Component {
 
         <div className="left">
           <Card style={{padding: "1.5em"}}> 
-          <h2> Lance B.C. Mok </h2> 1 <img src="lance.png" />
-          <h2> Lance B.C. Mok </h2> 2 <img src="./lance.png" />
+          {/* <h2> Lance B.C. Mok </h2> <img src="lance.png" /> */}
+          <h2> Lance B.C. Mok </h2> <ImageAvatar />
           <div >
             <h4 style={{fontWeight: "700"}}> Tools of Experience </h4>
             <List>
