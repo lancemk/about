@@ -15,7 +15,7 @@ export default class Home extends Component {
 
         <div className="left">
           <Card style={{padding: "1.0em"}}> 
-          {/* <h2> Lance B.C. Mok </h2> <img src="lance.png" /> */}
+          <h2> Lance B.C. Mok </h2> <img style={{width: '2em', height: '2em'}} src="/image/lance.png" />
           <h2> Lance B.C. Mok </h2> <ImageAvatar />
           <div >
             <h4 style={{fontWeight: "700"}}> Tools of Experience </h4>
