@@ -16,7 +16,7 @@ export default function ImageAvatar() {
 
   return (
     <div className={classes.root}>
-      <Avatar alt="Lance B.C. Mok" src="/image/lance.png" />
+      <Avatar style={{width: '5em', height: '5em'}} alt="Lance B.C. Mok" src={process.env.PUBLIC_URL + '/image/lance.png'} />
     </div>
   );
 } 
