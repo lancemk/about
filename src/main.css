@@ -1,8 +1,9 @@
-.body {
+body {
+	margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
+.container {	
 	position: fixed;
 	display: grid;
 	left: fit-content;
@@ -10,10 +11,11 @@
 	height: 100%;
 	background-color: rgb(100,100,100);;
 
-	grid-template-columns: 5fr 35fr 85fr 25 5fr ;
+	grid-template-columns: 5em 35fr 85fr 25fr 5em ;
 	/* grid-template-rows: 20px 60fr 25px; */
 
 	grid-template-areas: 
+	/* "	 left-space 		left 		center 		right 	 right-space ", */
 	"	 left-space 		left 		center 		right 	 right-space ";
   }
   
@@ -27,7 +29,7 @@
 
 .left {
   grid-area: "left";
-	background-color: rgb(75,75,75);
+	background-color: rgb(47, 60, 252);
 	position: absolute;
 	grid-column-start: 2;
 	grid-column-end: 3;	
@@ -35,15 +37,25 @@
 
 .center {
   grid-area: "center";
-	background-color: rgb(75,75,75);
+	background-color: rgb(190, 190, 190);
 	position: absolute;
 	grid-column-start: 3;
 	grid-column-end: 4;	
 }
+.center::-webkit-scrollbar::-webkit-scrollbar {
+	width: 0.5em;
+}
+.center::-webkit-scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.center::-webkit-scrollbar::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
 
 .right {
   grid-area: "right";
-	background-color: rgb(75,75,75);
+	background-color: rgb(85, 96, 255);
 	position: absolute;
 	grid-column-start: 4;
 	grid-column-end: 5;	
@@ -56,4 +68,18 @@
 	position: absolute;
 	grid-column-start: 5;
 	grid-column-end: 6;	
+}
+
+.center-paper {
+	max-height: max-content;
+}
+.center-paper::-webkit-scrollbar::-webkit-scrollbar {
+	width: 0.5em;
+}
+.center-paper::-webkit-scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.center-paper::-webkit-scrollbar::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
